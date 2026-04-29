@@ -91,7 +91,7 @@ export function initDB(): void {
       id: 'admin_001',
       username: 'admin',
       email: 'admin@headtail.game',
-      passwordHash: hashPassword('Hasilku!'),
+      passwordHash: hashPassword('Admin@123'),
       balance: 999999,
       role: 'admin',
       status: 'active',
