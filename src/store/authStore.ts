@@ -23,17 +23,17 @@ export const useAuthStore = create<AuthState>((set, get) => ({
 
     const user = usersDB.getByUsername(username);
     if (!user) {
-      set({ isLoading: false, error: 'Username atau password salah.' });
+      set({ isLoading: false, error: 'Salah itu bos username dan paswordnya..!!!.' });
       return false;
     }
 
     if (user.passwordHash !== hashPassword(password)) {
-      set({ isLoading: false, error: 'Username atau password salah.' });
+      set({ isLoading: false, error: 'Salah itu bos username dan paswordnya..!!!.' });
       return false;
     }
 
     if (user.status === 'suspended') {
-      set({ isLoading: false, error: 'Akun Anda telah disuspend. Hubungi admin.' });
+      set({ isLoading: false, error: 'Akunmu kena suspend, hub admin ya...biar bisa dibuka lagi...!!' });
       return false;
     }
 
@@ -48,17 +48,17 @@ export const useAuthStore = create<AuthState>((set, get) => ({
     await new Promise(r => setTimeout(r, 600));
 
     if (usersDB.getByUsername(username)) {
-      set({ isLoading: false, error: 'Username sudah digunakan.' });
+      set({ isLoading: false, error: 'udah ada yang punya pula username itu bro..!?.' });
       return false;
     }
 
     if (usersDB.getByEmail(email)) {
-      set({ isLoading: false, error: 'Email sudah terdaftar.' });
+      set({ isLoading: false, error: 'Emailnya udh terdaftar, pake email lain ya....' });
       return false;
     }
 
     if (password.length < 8) {
-      set({ isLoading: false, error: 'Password minimal 8 karakter.' });
+      set({ isLoading: false, error: '8 Karakter ya om paswordnya...jangan kurang!!?.' });
       return false;
     }
 
