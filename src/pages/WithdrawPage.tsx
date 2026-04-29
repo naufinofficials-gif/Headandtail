@@ -46,7 +46,7 @@ export default function WithdrawPage() {
     showToast('Permintaan withdraw terkirim!', 'success');
   };
 
-  const banks = ['BCA', 'BNI', 'BRI', 'Mandiri', 'CIMB Niaga', 'Danamon', 'Permata', 'BSI', 'BTN'];
+  const banks = ['BCA', 'BNI', 'BRI', 'DANA', 'GoPay', 'OVO', 'ShopeePay', 'USDT (bep20)', 'Polygon'];
   const quickAmounts = [50000, 100000, 200000, 500000, 1000000];
 
   if (submitted) {
