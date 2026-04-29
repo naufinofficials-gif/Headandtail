@@ -26,7 +26,7 @@ export default function Navbar() {
             <Coins className="w-7 h-7" style={{ color: '#ffd700' }} />
           </motion.div>
           <span className="text-xl font-black tracking-tight" style={{ background: 'linear-gradient(135deg, #ffd700, #ff9500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>
-            HeadTail<span style={{ WebkitTextFillColor: '#fff', fontWeight: 300 }}>.Game</span>
+            Tebak<span style={{ WebkitTextFillColor: '#fff', fontWeight: 300 }}>Tebakan</span>
           </span>
         </Link>
 
