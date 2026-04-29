@@ -28,15 +28,15 @@ export default function LandingPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ background: 'rgba(255,215,0,0.1)', border: '1px solid rgba(255,215,0,0.3)' }}>
               <Star className="w-4 h-4" style={{ color: '#ffd700' }} />
-              <span className="text-sm font-semibold" style={{ color: '#ffd700' }}>Platform Coin Flip #1 Indonesia</span>
+              <span className="text-sm font-semibold" style={{ color: '#ffd700' }}>Main Tebak Tebakan #1 Indonesia</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
-              <span style={{ color: '#fff' }}>Flip Koin,</span>
+              <span style={{ color: '#fff' }}>Cuma Pilih Gambar Doank..,</span>
               <br />
-              <span style={{ background: 'linear-gradient(135deg, #ffd700, #ff9500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Menangkan Besar!</span>
+              <span style={{ background: 'linear-gradient(135deg, #ffd700, #ff9500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Menangkan Reward!</span>
             </h1>
             <p className="text-xl mb-10" style={{ color: '#888', maxWidth: '500px', margin: '0 auto 2.5rem' }}>
-              Taruhan Head atau Tail, rasakan sensasi kemenangan dengan multiplier hingga 1.95x. Deposit & Withdraw mudah dan cepat.
+              Reward Tebak Tebakan, dan rasakan sensasi dengan  kemenangan hingga 1.75x. Deposit & Withdraw mudah dan cepat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {user ? (
@@ -76,13 +76,13 @@ export default function LandingPage() {
       {/* Features */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-black text-center mb-12" style={{ color: '#fff' }}>Kenapa Pilih <span style={{ color: '#ffd700' }}>HeadTail.Game?</span></h2>
+          <h2 className="text-3xl font-black text-center mb-12" style={{ color: '#fff' }}>Kenapa Pilih <span style={{ color: '#ffd700' }}>Tebak Tebakan?</span></h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: '⚡', title: 'Instant Play', desc: 'Tidak perlu download. Main langsung di browser dengan animasi koin yang smooth.' },
               { icon: '💰', title: 'Deposit Mudah', desc: 'Transfer bank lokal (BCA, BNI, BRI, Mandiri). Konfirmasi otomatis oleh admin.' },
               { icon: '🔒', title: 'Aman & Terpercaya', desc: 'Data terenkripsi, saldo terlindungi. Sistem keamanan berlapis untuk akun Anda.' },
-              { icon: '🎯', title: 'Win Rate Adil', desc: 'Sistem 50/50 yang transparan. Multiplier 1.95x untuk setiap kemenangan.' },
+              { icon: '🎯', title: 'Win Rate Adil', desc: 'Sistem 50/50 yang transparan. Multiplier 1.75x untuk setiap kemenangan.' },
               { icon: '📱', title: 'Mobile Friendly', desc: 'Tampilan responsif, nyaman dimainkan di HP maupun PC kapan saja.' },
               { icon: '⚡', title: 'Withdraw Cepat', desc: 'Request withdraw diproses admin dalam hitungan menit.' },
             ].map((f, i) => (
@@ -101,7 +101,7 @@ export default function LandingPage() {
       {recentBets.length > 0 && (
         <section className="py-10 px-4">
           <div className="max-w-2xl mx-auto">
-            <h2 className="text-2xl font-black text-center mb-6" style={{ color: '#fff' }}>🎲 Live Taruhan</h2>
+            <h2 className="text-2xl font-black text-center mb-6" style={{ color: '#fff' }}>🎲 Live Reward</h2>
             <div className="space-y-2">
               {recentBets.map((bet, i) => (
                 <motion.div key={bet.id} initial={{ opacity: 0, x: -20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.05 }}
@@ -132,7 +132,7 @@ export default function LandingPage() {
         <div className="max-w-2xl mx-auto text-center">
           <div className="p-10 rounded-3xl" style={{ background: 'linear-gradient(135deg, rgba(255,215,0,0.1), rgba(255,149,0,0.05))', border: '1px solid rgba(255,215,0,0.2)' }}>
             <h2 className="text-3xl font-black mb-4" style={{ color: '#fff' }}>Siap Mencoba Keberuntungan?</h2>
-            <p className="mb-8" style={{ color: '#888' }}>Daftar gratis, deposit, dan mulai taruhan sekarang!</p>
+            <p className="mb-8" style={{ color: '#888' }}>Daftar gratis, deposit, dan mulai dapatkan Rewardmu sekarang!</p>
             {!user && (
               <Link to="/register" className="btn-primary-lg">🎮 Daftar & Main Sekarang</Link>
             )}
@@ -144,9 +144,9 @@ export default function LandingPage() {
       <footer className="py-8 px-4 text-center" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="flex items-center justify-center gap-2 mb-3">
           <Coins className="w-5 h-5" style={{ color: '#ffd700' }} />
-          <span className="font-bold" style={{ color: '#ffd700' }}>HeadTail.Game</span>
+          <span className="font-bold" style={{ color: '#ffd700' }}>Tebak Tebakan</span>
         </div>
-        <p className="text-xs" style={{ color: '#444' }}>© 2024 HeadTail.Game. Bermain dengan bijak. 18+</p>
+        <p className="text-xs" style={{ color: '#444' }}>© 2026 Tebak Tebakan. Game Viral Saat ini</p>
       </footer>
     </div>
   );

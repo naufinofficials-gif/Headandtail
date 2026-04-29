@@ -54,7 +54,7 @@ export default function DepositPage() {
           <div className="text-6xl mb-4">⏳</div>
           <h2 className="text-2xl font-black mb-3" style={{ color: '#fff' }}>Menunggu Konfirmasi</h2>
           <p className="mb-6" style={{ color: '#888' }}>Admin akan memverifikasi deposit Anda. Saldo akan ditambahkan setelah konfirmasi.</p>
-          <button onClick={() => setSubmitted(false)} className="btn-primary">Deposit Lagi</button>
+          <button onClick={() => setSubmitted(false)} className="btn-primary">Deposit Lagi Ahh..!</button>
         </motion.div>
       </div>
     );

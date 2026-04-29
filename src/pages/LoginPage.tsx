@@ -35,7 +35,7 @@ export default function LoginPage() {
               <Coins className="w-8 h-8" style={{ color: '#ffd700' }} />
             </div>
             <h1 className="text-2xl font-black" style={{ color: '#fff' }}>Selamat Datang Kembali</h1>
-            <p className="text-sm mt-1" style={{ color: '#888' }}>Masuk ke akun HeadTail.Game Anda</p>
+            <p className="text-sm mt-1" style={{ color: '#888' }}>Masuk ke akun Tebak Tebakan Anda</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">
@@ -88,10 +88,6 @@ export default function LoginPage() {
               Belum punya akun?{' '}
               <Link to="/register" style={{ color: '#ffd700', fontWeight: 600 }}>Daftar Sekarang</Link>
             </p>
-          </div>
-
-          <div className="mt-4 p-3 rounded-xl text-xs" style={{ background: 'rgba(255,215,0,0.05)', border: '1px solid rgba(255,215,0,0.1)' }}>
-            <p style={{ color: '#888' }}><strong style={{ color: '#ffd700' }}>Demo Admin:</strong> admin / Admin@123</p>
           </div>
         </div>
       </motion.div>

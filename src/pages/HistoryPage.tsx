@@ -62,7 +62,7 @@ export default function HistoryPage() {
         {tab === 'bets' && (
           <div className="space-y-2">
             {bets.length === 0 ? (
-              <div className="text-center py-16" style={{ color: '#555' }}>Belum ada taruhan</div>
+              <div className="text-center py-16" style={{ color: '#555' }}>Belum ada reward</div>
             ) : bets.map((bet, i) => (
               <motion.div key={bet.id} initial={{ opacity: 0, y: 10 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: i * 0.02 }}
                 className="flex items-center justify-between px-4 py-3 rounded-xl"

@@ -50,8 +50,8 @@ export default function GamePage() {
       <div className="max-w-5xl mx-auto">
         {/* Header */}
         <div className="text-center mb-8">
-          <h1 className="text-3xl font-black" style={{ color: '#fff' }}>Head & Tail</h1>
-          <p className="text-sm mt-1" style={{ color: '#888' }}>Pilih sisi koin dan menangkan {settings.winMultiplier}x taruhan Anda</p>
+          <h1 className="text-3xl font-black" style={{ color: '#fff' }}>Tebak Tebakan</h1>
+          <p className="text-sm mt-1" style={{ color: '#888' }}>Pilih sisi Gambar dan menangkan {settings.winMultiplier}x reward Anda</p>
         </div>
 
         <div className="grid lg:grid-cols-3 gap-6">
@@ -103,7 +103,7 @@ export default function GamePage() {
 
             {/* Choice */}
             <div className="game-card">
-              <label className="block text-sm font-semibold mb-3" style={{ color: '#888' }}>PILIH SISI KOIN</label>
+              <label className="block text-sm font-semibold mb-3" style={{ color: '#888' }}>PILIH SISI GAMBAR</label>
               <div className="grid grid-cols-2 gap-4">
                 {(['heads', 'tails'] as const).map(side => (
                   <motion.button
@@ -132,7 +132,7 @@ export default function GamePage() {
 
             {/* Bet Amount */}
             <div className="game-card">
-              <label className="block text-sm font-semibold mb-3" style={{ color: '#888' }}>JUMLAH TARUHAN</label>
+              <label className="block text-sm font-semibold mb-3" style={{ color: '#888' }}>JUMLAH REWARD</label>
               <div className="relative mb-3">
                 <span className="absolute left-3 top-1/2 -translate-y-1/2 text-sm font-bold" style={{ color: '#888' }}>Rp</span>
                 <input
@@ -194,7 +194,7 @@ export default function GamePage() {
               </h3>
               <div className="space-y-3">
                 <div className="flex justify-between">
-                  <span style={{ color: '#888' }}>Total Taruhan</span>
+                  <span style={{ color: '#888' }}>Total Reward</span>
                   <span className="font-bold" style={{ color: '#fff' }}>{userBets.length}</span>
                 </div>
                 <div className="flex justify-between">
@@ -222,7 +222,7 @@ export default function GamePage() {
               </h3>
               <div className="space-y-2 max-h-96 overflow-y-auto">
                 {recentBets.length === 0 ? (
-                  <p className="text-xs text-center py-4" style={{ color: '#555' }}>Belum ada taruhan</p>
+                  <p className="text-xs text-center py-4" style={{ color: '#555' }}>Belum ada reward</p>
                 ) : (
                   recentBets.map((bet, i) => (
                     <motion.div key={bet.id} initial={{ opacity: 0, x: 20 }} animate={{ opacity: 1, x: 0 }} transition={{ delay: i * 0.03 }}
@@ -246,9 +246,9 @@ export default function GamePage() {
               <h3 className="font-bold mb-3" style={{ color: '#fff' }}>📜 Aturan</h3>
               <ul className="space-y-2 text-xs" style={{ color: '#888' }}>
                 <li>• Pilih HEAD (👑) atau TAIL (⚡)</li>
-                <li>• Menang = {settings.winMultiplier}x taruhan</li>
-                <li>• Min taruhan: {formatIDR(settings.minBet)}</li>
-                <li>• Max taruhan: {formatIDR(settings.maxBet)}</li>
+                <li>• Menang = {settings.winMultiplier}x Reward</li>
+                <li>• Min Reward: {formatIDR(settings.minBet)}</li>
+                <li>• Max Reward: {formatIDR(settings.maxBet)}</li>
                 <li>• Hasil langsung ke saldo</li>
               </ul>
             </div>

@@ -56,7 +56,7 @@ export default function WithdrawPage() {
           <div className="text-6xl mb-4">⏳</div>
           <h2 className="text-2xl font-black mb-3" style={{ color: '#fff' }}>Withdraw Diproses</h2>
           <p className="mb-6" style={{ color: '#888' }}>Admin akan memproses withdraw Anda segera. Dana akan dikirim ke rekening yang Anda daftarkan.</p>
-          <button onClick={() => setSubmitted(false)} className="btn-primary">Withdraw Lagi</button>
+          <button onClick={() => setSubmitted(false)} className="btn-primary">Withdraw Lagi Ahh...!!</button>
         </motion.div>
       </div>
     );
