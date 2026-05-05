@@ -36,7 +36,7 @@ export default function RegisterPage() {
               <Coins className="w-8 h-8" style={{ color: '#ffd700' }} />
             </div>
             <h1 className="text-2xl font-black" style={{ color: '#fff' }}>Buat Akun Baru</h1>
-            <p className="text-sm mt-1" style={{ color: '#888' }}>Bergabung dengan Tebak Tebakan</p>
+            <p className="text-sm mt-1" style={{ color: '#888' }}>Bergabung dengan Klik Pilih Menang</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-4">

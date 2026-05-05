@@ -35,7 +35,7 @@ export default function LoginPage() {
               <Coins className="w-8 h-8" style={{ color: '#ffd700' }} />
             </div>
             <h1 className="text-2xl font-black" style={{ color: '#fff' }}>Selamat Datang Kembali</h1>
-            <p className="text-sm mt-1" style={{ color: '#888' }}>Masuk ke akun Tebak Tebakan Anda</p>
+            <p className="text-sm mt-1" style={{ color: '#888' }}>Masuk ke akun Klik Pilih Menang Anda</p>
           </div>
 
           <form onSubmit={handleSubmit} className="space-y-5">

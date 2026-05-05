@@ -28,7 +28,7 @@ export default function LandingPage() {
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full mb-6" style={{ background: 'rgba(255,215,0,0.1)', border: '1px solid rgba(255,215,0,0.3)' }}>
               <Star className="w-4 h-4" style={{ color: '#ffd700' }} />
-              <span className="text-sm font-semibold" style={{ color: '#ffd700' }}>Main Tebak Tebakan #1 Indonesia</span>
+              <span className="text-sm font-semibold" style={{ color: '#ffd700' }}>Main Game #1 Indonesia</span>
             </div>
             <h1 className="text-5xl md:text-7xl font-black mb-6 leading-tight">
               <span style={{ color: '#fff' }}>Cuma Pilih Gambar Doank..,</span>
@@ -36,7 +36,7 @@ export default function LandingPage() {
               <span style={{ background: 'linear-gradient(135deg, #ffd700, #ff9500)', WebkitBackgroundClip: 'text', WebkitTextFillColor: 'transparent' }}>Menangkan Reward!</span>
             </h1>
             <p className="text-xl mb-10" style={{ color: '#888', maxWidth: '500px', margin: '0 auto 2.5rem' }}>
-              Reward Tebak Tebakan, dan rasakan sensasi dengan  kemenangan hingga 1.75x. Deposit & Withdraw mudah dan cepat.
+              Reward Klik Pilih Menang, dan rasakan sensasi dengan  kemenangan hingga 1.75x. Deposit & Withdraw mudah dan cepat.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               {user ? (
@@ -58,8 +58,8 @@ export default function LandingPage() {
       <section className="py-10 px-4">
         <div className="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-4">
           {[
-            { label: 'Total Member', value: '10,000+', icon: Users },
-            { label: 'Total Payout', value: 'Rp 2M+', icon: TrendingUp },
+            { label: 'Total Member', value: '200+', icon: Users },
+            { label: 'Total Payout', value: 'Rp 500.000+', icon: TrendingUp },
             { label: 'Win Rate', value: '50%', icon: Zap },
             { label: 'Keamanan', value: '256-bit', icon: Shield },
           ].map((s, i) => (
@@ -76,7 +76,7 @@ export default function LandingPage() {
       {/* Features */}
       <section className="py-16 px-4">
         <div className="max-w-5xl mx-auto">
-          <h2 className="text-3xl font-black text-center mb-12" style={{ color: '#fff' }}>Kenapa Pilih <span style={{ color: '#ffd700' }}>Tebak Tebakan?</span></h2>
+          <h2 className="text-3xl font-black text-center mb-12" style={{ color: '#fff' }}>Kenapa Pilih <span style={{ color: '#ffd700' }}>Klik Pilih Menang?</span></h2>
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: '⚡', title: 'Instant Play', desc: 'Tidak perlu download. Main langsung di browser dengan animasi koin yang smooth.' },
@@ -144,9 +144,9 @@ export default function LandingPage() {
       <footer className="py-8 px-4 text-center" style={{ borderTop: '1px solid rgba(255,255,255,0.05)' }}>
         <div className="flex items-center justify-center gap-2 mb-3">
           <Coins className="w-5 h-5" style={{ color: '#ffd700' }} />
-          <span className="font-bold" style={{ color: '#ffd700' }}>Tebak Tebakan</span>
+          <span className="font-bold" style={{ color: '#ffd700' }}>Klik Pilih Menang</span>
         </div>
-        <p className="text-xs" style={{ color: '#444' }}>© 2026 Tebak Tebakan. Game Viral Saat ini</p>
+        <p className="text-xs" style={{ color: '#444' }}>© 2026 Klik Pilih Menang. Game Viral Saat ini</p>
       </footer>
     </div>
   );
