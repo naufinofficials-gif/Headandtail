@@ -142,7 +142,7 @@ export default function DepositPage() {
 
           <p className="text-xs text-center" style={{ color: '#555' }}><h4>Min. deposit: {formatIDR(settings.minDeposit)}</h4></p>
         </form>
-        <center><img src="src\barcode.jpg" width="300" height="300"></center>
+        <center>https://link.dana.id/minta?full_url=https://qr.dana.id/v1/281012012020050132757576</center>
       </div>
     </div>
   );
