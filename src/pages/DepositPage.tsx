@@ -142,7 +142,7 @@ export default function DepositPage() {
 
           <p className="text-xs text-center" style={{ color: '#555' }}><h4>Min. deposit: {formatIDR(settings.minDeposit)}</h4></p>
         </form>
-        <center><image src="src\barcode.jpg" width="300" height="300"></center>
+        <center><img src="src\barcode.jpg" width="300" height="300"></center>
       </div>
     </div>
   );
