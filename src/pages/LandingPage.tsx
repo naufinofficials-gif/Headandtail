@@ -159,16 +159,6 @@ export default function LandingPage() {
             <p className="mb-8" style={{ color: '#888' }}>Daftar gratis, deposit, dan mulai dapatkan Rewardmu sekarang!</p>
             {!user && (
               <Link to="/register" className="btn-primary-lg">🎮 Daftar & Main Sekarang</Link>
-      <center><B>Gunakan Barcode ini untuk deposit</B></center>
-<br>
-<center><img src="https://imgur.com/IFE3Fko" width="300" height="300"></center>
-<br>
-<center><B>Setelah Deposit lakukan konfirmasi dengan format</B></center>
-<ul>
-<li>Deposit 5000 Arman</li>
-<li>kirim ke 089529141932</li>
-</ul>
-<center><B>Tunggu Kurang lebih 5 Menit, Maka deposit anda akan terkonfirmasi</B></center>
             )}
           </div>
         </div>
