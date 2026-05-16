@@ -142,7 +142,7 @@ export default function DepositPage() {
 
           <p className="text-xs text-center" style={{ color: '#555' }}><h4>Min. deposit: {formatIDR(settings.minDeposit)}</h4></p>
           <center>Gunakan Barcode di bawah ini jika ingin melakukan Deposit</center>
-    <center><blockquote class="imgur-embed-pub" lang="en" data-id="mG8eZm4"><a href="https://imgur.com/mG8eZm4"></a></blockquote><script async src="//s.imgur.com/min/embed.js" charset="utf-8"></script> </center>
+    <center>[Imgur](https://imgur.com/mG8eZm4)</center>
         </form>
       </div>
     </div>
